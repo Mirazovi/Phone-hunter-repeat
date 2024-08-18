@@ -22,13 +22,13 @@ const SetData = (phones,isShowAll) =>{
         phones.forEach(phone => {
             const div = document.createElement('div');
             div.innerHTML = `
-            <div class="border p-6 rounded-xl text-center">
+            <div class="border p-6 rounded-xl text-center lg:m-0 m-4 shadow-lg">
             <div class=" p-6 flex justify-center">
                  <img src=${phone.image} alt="">
             </div>
                 <h1>${phone.phone_name}</h1>
                 <p>${phone.slug}</p>
-                <button onclick="ShowModalClick('${phone.slug}')" class="p-2 rounded-lg my-2 bg-violet-600 w-full text-xl text-white">Show Details</button>
+                <button onclick="ShowModalClick('${phone.slug}')" class="p-2 rounded-lg my-2 bg-violet-600 lg:w-full text-xl text-white">Show Details</button>
             </div>
             `
             Container.appendChild(div);
